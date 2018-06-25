@@ -6,10 +6,10 @@
 // maxChar("apple 1231111") === "1"
 
 function maxChar(str) {
-    let obj = {},
-        max = 0,
-        maxChar = ''
-        
+    let obj = {}
+    let max = 0
+    let maxChar = ''
+
     for (let char of str) {
         obj[char] = !obj[char] ? 1 : obj[char] + 1
     }
@@ -18,9 +18,8 @@ function maxChar(str) {
         if(max < obj[char]) {
             max = obj[char]
             maxChar = char
-        } 
+        }
     }
-   
     return maxChar
 }
 

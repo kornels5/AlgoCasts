@@ -13,15 +13,15 @@
 //   buzz
 
 function fizzBuzz(n) {
-    for (let i = 1; i <= n; i++) {
-        let string = ''
-        if (i % 3 === 0) {
-            string += 'fizz'
+    for (let i=1; i<=n; i++) {
+        let line = ''
+        if(i%3 === 0) {
+            line += 'fizz'
         }
-        if (i % 5 === 0) {
-            string += 'buzz'
+        if(i%5 === 0) {
+            line += 'buzz'
         }
-        console.log(string || i)
+        console.log(line || i)
     }
 }
 
